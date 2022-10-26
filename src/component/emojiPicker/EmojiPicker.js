@@ -8,6 +8,7 @@ export function EmojiPicker(props, refInput) {
     const [emojis, setEmojis] = useState([...emojiList]);
 
     const containerRef = useRef(null);
+    
     useEffect(() => {
         window.addEventListener('click', e => {
             if(!containerRef.current.contains(e.target)) {
@@ -44,7 +45,8 @@ export function EmojiPicker(props, refInput) {
                             emoji={emoji} 
                             onClick={handleOnClickEmoji}/>))}
                     </div>
-                </div>) : ("")}
+                </div>) : ("")
+            }
         </div>
     );
 }

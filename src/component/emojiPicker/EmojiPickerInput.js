@@ -6,7 +6,7 @@ export default function EmojiPickerInput() {
 
     return(
         <div>
-            <input ref={refInput}/>
+            <input ref={refInput}/>     
             <EmojiPicker ref={refInput}/>
         </div>
     );
